@@ -6,8 +6,6 @@
         const moduleTitle = `Module ${index + 1} ${moduleElementTitle}`;
         const subModuleElementsList = Array.from(moduleElement.querySelectorAll('.module-content span[title]'));
 
-        console.log(moduleTitle);
-
         const subModuleTitlesList = subModuleElementsList.reduce((subModuleTitlesList, subModule, index) => {
             const subModuleElementTitle = subModule.innerHTML;
             const subModuleTitle = `Submodule ${index + 1} ${subModuleElementTitle}`; 
